@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Hello World | Hexo</title>
-  <meta name="keywords" content="">
-  <meta name="description" content="Hello World | Hexo">
+  <title>mobaXterm连接虚拟机 | Hexo</title>
+  <meta name="keywords" content=" 随笔 ">
+  <meta name="description" content="mobaXterm连接虚拟机 | Hexo">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="连接虚拟机SSH 方式连接1.window下查看IP地址 ipconfig   2.在虚拟机获取root权限，获得root权限当然要输入密码喽 su root   如果命令行变成这样，表示获取权限成功  3.修改网络配置，ifcfg-ens33根据每个人的机器名字的不同因人而异，如果没有进行过任何修改应该都是叫ifcfg-ens33 vi &#x2F;etc&#x2F;sysconfig&#x2F;network-script">
 <meta property="og:type" content="article">
@@ -296,24 +296,39 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-mobaXterm连接虚拟机" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">Hello World</h1>
+        <h1 class="article-title">mobaXterm连接虚拟机</h1>
     
     <div class="article-meta">
         
         
         
+        <span class="book">
+            <i class="iconfont icon-category"></i>
+            
+            
+            <a  data-rel="随笔">随笔</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            <i class="iconfont icon-tag"></i>
+            
+            <a class="color3">随笔</a>
+            
+        </span>
         
     </div>
     <div class="article-meta">
         
-            Created At : <time class="date" title='Updated At: 2022-09-11 00:11:12'>2022-09-11 00:11</time>
+            Created At : <time class="date" title='Updated At: 2022-12-07 23:54:49'>2022-12-07 23:52</time>
         
     </div>
     <div class="article-meta">
         
-        <span>Count:75</span>
+        <span>Count:228</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -332,7 +347,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick-Start"><span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-a-new-post"><span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run-server"><span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate-static-files"><span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy-to-remote-sites"><span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%9E%E6%8E%A5%E8%99%9A%E6%8B%9F%E6%9C%BA"><span class="toc-text">连接虚拟机</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#SSH-%E6%96%B9%E5%BC%8F%E8%BF%9E%E6%8E%A5"><span class="toc-text">SSH 方式连接</span></a></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -348,19 +363,33 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre><code class="bash">$ hexo new &quot;My New Post&quot;
+        <h2 id="连接虚拟机"><a href="#连接虚拟机" class="headerlink" title="连接虚拟机"></a>连接虚拟机</h2><h3 id="SSH-方式连接"><a href="#SSH-方式连接" class="headerlink" title="SSH 方式连接"></a>SSH 方式连接</h3><p>1.window下查看IP地址</p>
+<pre><code class="shell">ipconfig
 </code></pre>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre><code class="bash">$ hexo server
+<p><img src="https://hhxcyls.oss-cn-shenzhen.aliyuncs.com/notePicture/202212072354126.png" alt="image-20221207233345264"></p>
+<p>2.在虚拟机获取root权限，获得root权限当然要输入密码喽</p>
+<pre><code class="shell">su root 
 </code></pre>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre><code class="bash">$ hexo generate
+<p>如果命令行变成这样，表示获取权限成功</p>
+<p><img src="https://hhxcyls.oss-cn-shenzhen.aliyuncs.com/notePicture/202212072354172.png" alt="image-20221207233735858"></p>
+<p>3.修改网络配置，<code>ifcfg-ens33</code>根据每个人的机器名字的不同因人而异，如果没有进行过任何修改应该都是叫<code>ifcfg-ens33</code></p>
+<pre><code class="shell">vi /etc/sysconfig/network-scripts/ifcfg-ens33
 </code></pre>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre><code class="bash">$ hexo deploy
+<p><img src="https://hhxcyls.oss-cn-shenzhen.aliyuncs.com/notePicture/202212072354149.png" alt="在这里插入图片描述"></p>
+<p>然后我们就可以对此进行配置了，主要是对图中标注地方进行配置。</p>
+<ul>
+<li>IPADDR：前三位和我们刚才在window下查看的IP地址相同，最后一位不能相同，随便取0-255。</li>
+</ul>
+<p>修改完毕，保存退出:wq</p>
+<p>4.重新启动网络，顺便关闭防火墙</p>
+<pre><code>service network restart
+
+systemctl status firewalld
+systemctl disable firewalld.service
+systemctl stop firewalld.service
 </code></pre>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+<p>5.在mebaXterm ssh输入刚才设置的虚拟机IP地址，即可连接</p>
+<p><img src="https://hhxcyls.oss-cn-shenzhen.aliyuncs.com/notePicture/202212072354149.png" alt="image-20221207234351773"></p>
 
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 jaytp@qq.com </span>
