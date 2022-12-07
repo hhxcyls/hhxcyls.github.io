@@ -16,9 +16,9 @@
 <meta property="og:image" content="https://hhxcyls.oss-cn-shenzhen.aliyuncs.com/notePicture/202212072354126.png">
 <meta property="og:image" content="https://hhxcyls.oss-cn-shenzhen.aliyuncs.com/notePicture/202212072354172.png">
 <meta property="og:image" content="https://hhxcyls.oss-cn-shenzhen.aliyuncs.com/notePicture/202212072354149.png">
-<meta property="og:image" content="https://hhxcyls.oss-cn-shenzhen.aliyuncs.com/notePicture/202212072354149.png">
+<meta property="og:image" content="https://hhxcyls.oss-cn-shenzhen.aliyuncs.com/notePicture/202212072343869.png">
 <meta property="article:published_time" content="2022-12-07T15:52:18.000Z">
-<meta property="article:modified_time" content="2022-12-07T15:54:49.060Z">
+<meta property="article:modified_time" content="2022-12-07T16:01:57.043Z">
 <meta property="article:author" content="John Doe">
 <meta property="article:tag" content="随笔">
 <meta name="twitter:card" content="summary">
@@ -158,7 +158,7 @@
     <li>
         <div class="all active" data-rel="全部文章">全部文章
             
-                <small>(3)</small>
+                <small>(1)</small>
             
         </div>
     </li>
@@ -169,7 +169,7 @@
                     <div data-rel="随笔">
                         
                         随笔
-                        <small>(2)</small>
+                        <small>(1)</small>
                         
                     </div>
                     
@@ -190,8 +190,8 @@
         
     </div>
 </div>
-<input type="hidden" id="yelog_site_posts_number" value="3">
-<input type="hidden" id="yelog_site_word_count" value="331">
+<input type="hidden" id="yelog_site_posts_number" value="1">
+<input type="hidden" id="yelog_site_word_count" value="228">
 <div style="display: none">
     <span id="busuanzi_value_site_uv"></span>
     <span id="busuanzi_value_site_pv"></span>
@@ -240,10 +240,6 @@
                 <i class="iconfont icon-tag"></i><a>随笔</a>
             </li>
         
-            <li class="article-tag-list-item">
-                <i class="iconfont icon-tag"></i><a>test</a>
-            </li>
-        
     </div>
 
 </div>
@@ -258,24 +254,6 @@
            data-author="" >
             <span class="post-title" title="mobaXterm连接虚拟机">mobaXterm连接虚拟机</span>
             <span class="post-date" title="2022-12-07 23:52:18">2022/12/07</span>
-        </a>
-        
-        
-        <a  class="全部文章 随笔 "
-           href="/2022/09/11/test/"
-           data-tag="test"
-           data-author="" >
-            <span class="post-title" title="test">test</span>
-            <span class="post-date" title="2022-09-11 03:36:02">2022/09/11</span>
-        </a>
-        
-        
-        <a  class="全部文章 "
-           href="/2022/09/11/hello-world/"
-           data-tag=""
-           data-author="" >
-            <span class="post-title" title="Hello World">Hello World</span>
-            <span class="post-date" title="2022-09-11 00:11:12">2022/09/11</span>
         </a>
         
         <div id="no-item-tips">
@@ -323,7 +301,7 @@
     </div>
     <div class="article-meta">
         
-            Created At : <time class="date" title='Updated At: 2022-12-07 23:54:49'>2022-12-07 23:52</time>
+            Created At : <time class="date" title='Updated At: 2022-12-08 00:01:57'>2022-12-07 23:52</time>
         
     </div>
     <div class="article-meta">
@@ -363,17 +341,17 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id="连接虚拟机"><a href="#连接虚拟机" class="headerlink" title="连接虚拟机"></a>连接虚拟机</h2><h3 id="SSH-方式连接"><a href="#SSH-方式连接" class="headerlink" title="SSH 方式连接"></a>SSH 方式连接</h3><p>1.window下查看IP地址</p>
-<pre><code class="shell">ipconfig
+        <h2 id="连接虚拟机"><a href="#连接虚拟机" class="headerlink" title="连接虚拟机"></a>连接虚拟机</h2><h3 id="SSH-方式连接"><a href="#SSH-方式连接" class="headerlink" title="SSH 方式连接"></a>SSH 方式连接</h3><p><strong>1.window下查看IP地址</strong></p>
+<pre><code>ipconfig
 </code></pre>
 <p><img src="https://hhxcyls.oss-cn-shenzhen.aliyuncs.com/notePicture/202212072354126.png" alt="image-20221207233345264"></p>
-<p>2.在虚拟机获取root权限，获得root权限当然要输入密码喽</p>
-<pre><code class="shell">su root 
+<p><strong>2.在虚拟机获取root权限，获得root权限当然要输入密码喽</strong></p>
+<pre><code>su root 
 </code></pre>
 <p>如果命令行变成这样，表示获取权限成功</p>
 <p><img src="https://hhxcyls.oss-cn-shenzhen.aliyuncs.com/notePicture/202212072354172.png" alt="image-20221207233735858"></p>
-<p>3.修改网络配置，<code>ifcfg-ens33</code>根据每个人的机器名字的不同因人而异，如果没有进行过任何修改应该都是叫<code>ifcfg-ens33</code></p>
-<pre><code class="shell">vi /etc/sysconfig/network-scripts/ifcfg-ens33
+<p><strong>3.修改网络配置，<code>ifcfg-ens33</code>根据每个人的机器名字的不同因人而异，如果没有进行过任何修改应该都是叫<code>ifcfg-ens33</code></strong></p>
+<pre><code>vi /etc/sysconfig/network-scripts/ifcfg-ens33
 </code></pre>
 <p><img src="https://hhxcyls.oss-cn-shenzhen.aliyuncs.com/notePicture/202212072354149.png" alt="在这里插入图片描述"></p>
 <p>然后我们就可以对此进行配置了，主要是对图中标注地方进行配置。</p>
@@ -381,15 +359,15 @@
 <li>IPADDR：前三位和我们刚才在window下查看的IP地址相同，最后一位不能相同，随便取0-255。</li>
 </ul>
 <p>修改完毕，保存退出:wq</p>
-<p>4.重新启动网络，顺便关闭防火墙</p>
+<p><strong>4.重新启动网络，顺便关闭防火墙</strong></p>
 <pre><code>service network restart
 
 systemctl status firewalld
 systemctl disable firewalld.service
 systemctl stop firewalld.service
 </code></pre>
-<p>5.在mebaXterm ssh输入刚才设置的虚拟机IP地址，即可连接</p>
-<p><img src="https://hhxcyls.oss-cn-shenzhen.aliyuncs.com/notePicture/202212072354149.png" alt="image-20221207234351773"></p>
+<p><strong>5.在mebaXterm ssh输入刚才设置的虚拟机IP地址，即可连接</strong></p>
+<p><img src="https://hhxcyls.oss-cn-shenzhen.aliyuncs.com/notePicture/202212072343869.png" alt="image-20221207234351773"></p>
 
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 jaytp@qq.com </span>
